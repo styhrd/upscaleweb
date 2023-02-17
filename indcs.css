@@ -7,6 +7,7 @@ html
 {
     scroll-behavior: smooth;
 }
+
 body
 {
     height: 100%;
@@ -15,6 +16,7 @@ body
     padding: 0;
 }
 
+/*HOME*/
 .container1
 {
     background: rgb(28,28,28);
@@ -26,7 +28,7 @@ body
 
 }
 
-.lit{
+.bg{
     background: linear-gradient(-45deg,rgba(28,28,28,1), rgba(78,51,126,1), rgba(28,28,28,1), rgba(158,99,215,1));
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -63,7 +65,7 @@ body
 .main1
 {
     display: flex;
-    text-align: left;
+    text-align: center;
     margin: 100px;
     align-items: center;
     justify-content: center;
@@ -80,7 +82,22 @@ body
 
 .right1
 {
+    text-align: left;
     width: 70%;
+}
+
+.text1_1
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5em;
+    padding-bottom: 0.5em;
+}
+
+.text1_2
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    padding-bottom: 2em;
 }
 
 .button1
@@ -109,19 +126,33 @@ body
     transform: scale(1.1);
 }
 
-.heading1
+.companyname
 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2.5em;
-}
-
-.heading2
-{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2em;
+    text-align: left;
+    font-family: 'Unbounded', cursive;
+    color: white;
+    font-size: 2em;
+    padding-left: 1.5em;
 }
 
 
+
+
+
+
+
+/*VIDEO INTRODUCTION*/
+.container2
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button2
+{
+    padding-top: 3em;
+}
 .text2_1
 {
     font-family: 'Poppins', sans-serif;
@@ -134,18 +165,20 @@ body
     font-size: 4em;
 }
 
-.header2
+.main2
 {
     text-align: center;
     margin-top: 3em;
     color: #2F2738;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .video1
 {
     text-align: center;
-    display: block;
+    display: flex;
     margin: 100px;
     align-items: center;
     justify-content: center;
@@ -157,22 +190,22 @@ body
 .content2
 {
     text-align: center;
-    margin: 3em;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .desc1
 {
     text-align: center;
-    margin: 2em 10em 0em;
     font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
 }
 
-.desc2
+.text2_3
 {
-    text-align: center;
-    margin: 0em 10em 2em;
-    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    padding-bottom: 1em;
 }
 
 
@@ -181,16 +214,52 @@ body
 
 
 
+/*GET TO KNOW US*/
+.container3
+{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main3
+{
+    font-size: 2em;
+    color:white;
+    max-width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+}
+
+.main3 img
+{
+    width: 30%;
+}
+
+.text3_1
+{
+    padding-top: .5em;
+    padding-bottom: 1em;
+}
+
+.spacer3
+{
+    aspect-ratio: 900/600 ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer3 {
+    background-image: url(bg3.svg);
+}
 
 
 
 
-
-
-
-
-
-
+/*KNOW OUR PROCESS*/
 .spacer
 {
     aspect-ratio: 960/540 ;
@@ -201,8 +270,7 @@ body
 }
 
 .layer1 {
-    background-image: url(layer1.svg
-    );
+    background-image: url(layer1.svg);
 }
 
 .header4
@@ -250,8 +318,8 @@ body
 
 .content4
 {
-    max-width: 1200px;
-    text-align: left;
+    max-width: 1000px;
+    text-align: justify;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 1.5em;
@@ -267,11 +335,80 @@ body
 }
 
 
+/* PRICING */
+.container5
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.window5_2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header5
+{
+    font-family: 'Unbounded', cursive;
+    font-size: 6em;
+    padding-top: .5em;
+    padding-bottom: .1em;
+}
+
+.text5_1
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    padding-bottom: .5em;
+}
+
+.text5_2
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4em;
+}
+
+.button3
+{
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+
+.spacer2
+{
+    aspect-ratio: 900/600 ;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer2 {
+    background-image: url(bg2.svg);
+}
+
+.window5_1
+{
+    color: white;
+}
 
 
 
 
 
+
+
+
+
+
+
+/*MOBILE INTEGRATION*/
 @media (max-width: 1040px)
 {
     .main1
@@ -304,10 +441,100 @@ body
     {
         display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: .6em;
+    }
+
+    .companyname
+    {
+        padding: 0em;
     }
     .logo
     {
         width:70%;
         margin-left: 1em;
     }
+
+
+    /*VIDEO INTRODUCTION*/
+    .text2_1
+    {
+        font-size: 2em;
+    }
+
+    .video1
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .text2_3
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    
+
+
+
+
+    /*GET TO KNOW US*/
+    .main3
+    {
+        padding-top: 1em;
+    }
+
+    .text3_1
+    {
+        font-size: .5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        text-align: justify;
+        
+    }
+
+    /*KNOW OUR PROCESS*/
+    .header4{
+        font-size: 3em;
+    }
+    .content4
+    {
+        font-size: 1em;
+    }
+
+    /*PRICING*/
+    .header5
+    {
+        font-size: 4em;
+    }
+
+    .text5_1
+    {
+        font-size: 1em;
+    }
+
+    .text5_2
+    {
+        font-size: 2em;
+    }
+
+    .button3
+    {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        font-size: .7em;
+        padding-bottom: 2em;
+    }
+
+    .window5_2
+    {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    
 }
