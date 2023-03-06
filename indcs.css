@@ -34,14 +34,15 @@ body
 /*NAVBAR*/
 .navcon
 {
-    max-width: 1300px;
+    max-width: 1700px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav{
+nav
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -55,7 +56,7 @@ nav{
 
 .navcon
 {
-    color: #FFFFFF;
+    color: var(--light);
     font-size: 1em;
     font-weight: 900;
     letter-spacing: 2px;
@@ -91,7 +92,6 @@ nav{
     background-color: var(--light);
     border-radius: 6px;
     z-index: 1;
-
     transform-origin: 0 0;
     transition: 0.4s;
 }
@@ -160,7 +160,7 @@ nav{
 
 .menu a.is-active, .menu a:hover
 {
-    background-color: #AD6FE1;
+    background-color: var(--primary);
 }
 
 .mobile-nav
@@ -172,7 +172,7 @@ nav{
     min-height: 100vh;
     display: block;
     z-index: 98;
-    background-color: #1B1B1B;
+    background-color:var(--dark);
     padding-top: 120px;
     transition: .4s;
 }
@@ -192,15 +192,15 @@ nav{
     margin: 0 auto 16px;
     text-align: center;
     padding: 12px 16px;
-    background-color: #FFFFFF;
-    color: #1B1B1B;
+    background-color: var(--light);
+    color: var(--dark);
     text-decoration: none;
 }
 
 
 .mobile-nav a:hover
 {
-    background-color: #AD6FE1;
+    background-color: var(--primary);
 }
 
 
@@ -254,12 +254,13 @@ nav{
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #1B1B1B;
+        color: var(--dark);
         text-decoration: none;
         font-family: 'Roboto Condensed', sans-serif;
     }
 
 }
+
 
 /*----------------------------------------*/
 /*HOME*/
@@ -293,10 +294,6 @@ nav{
 	}
 }
 
-.container1 
-{
-    background-color: #1B1B1B;
-}
   
 .content1
 {
@@ -317,7 +314,7 @@ nav{
     display: flex; 
     align-items: center;  
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 0em 2em 0em;
 }
@@ -330,6 +327,8 @@ nav{
 
 .right1
 {
+    display: flex;
+    flex-direction: column;
     text-align: left;
     font-weight: bolder;
     width: 65%;
@@ -359,9 +358,10 @@ nav{
 {
     margin: 0;
     padding: 0;
-    background-color: #1B1B1B ;
+    background-color:var(--dark) ;
     padding: 4em 0em 4em;
 }
+
 .window2
 {
     display: flex;
@@ -372,19 +372,12 @@ nav{
     padding: 4em 0em 4em;
 }
 
-.flexbox2
+.header2
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.header2
-{
     padding-left: 2em;
-    color:white;
+    color:var(--light);
     max-width: 600px;
 }
 
@@ -403,7 +396,7 @@ nav{
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 5em;
-    color: #AD6FE1;
+    color: var(--primary);
 }
 
 .text2_3
@@ -413,10 +406,6 @@ nav{
     padding-top: 3em;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
 }
 
 
@@ -435,7 +424,7 @@ nav{
 
 .videoBG
 {
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     min-width: 100%;
@@ -475,7 +464,7 @@ nav{
     max-width: 1100px;
     font-size: 1em;
     text-align: left;
-    color: white;
+    color:var(--light);
     font-family: 'Poppins', sans-serif;
     padding: 4em 2em 4em;
     background-color: rgba(0,0,0,0.4);
@@ -511,18 +500,11 @@ nav{
 
 /*--------------------------*/
 /*KNOW OUR PROCESS*/
-
-.spacer
+.container4 
 {
-    aspect-ratio: 960/540 ;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.layer1 {
     background-color:#F5F5F7 ;
+    width: 100%;
+    padding-bottom: 2em;
 }
 
 .header4
@@ -531,11 +513,17 @@ nav{
     font-family: 'Roboto Condensed', sans-serif;
     padding-top: .5em;
     padding-bottom: .3em;
-    color: #1B1B1B;
+    color: var(--dark);
     font-size: 7.5em;
 }
 
-
+.window4
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 .flexbox4
 {
     display: flex;
@@ -545,18 +533,19 @@ nav{
     max-width: 500px;
     border: 1px solid black ;
     border-radius: 2em;
-    background-color:#1B1B1B;
+    background-color:var(--dark);
     margin: 2em;
     max-height: 800px;
     box-shadow: 5px 10px 8px 10px #888888;
 }
 
 
+
 .text4_3
 {
     width: 80%;
     font-size: 1.5em;
-    color:white;
+    color:var(--light);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-bottom: 1.4em;
@@ -572,7 +561,7 @@ nav{
 {
     width: 80%;
     font-size: 1.5em;
-    color:white;
+    color:var(--light);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding-bottom: 1.4em;
@@ -595,18 +584,11 @@ nav{
     padding: 1em 0em 1em;
 }
 
-.container4
-{
-    width: 100%;
-    padding-bottom: 2em;
-}
-
-
 .text4_1
 {
     width: 80%;
     font-size: 1.5em;
-    color:white;
+    color:var(--light);
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
@@ -617,25 +599,19 @@ nav{
     text-align: justify;
 }
 
-
-.window4
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
 .header4_1
 {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 
+
+
+
 /*SAMPLE VIDEO*/
 .container6
 {
-    background-color: #1B1B1B;
+    background-color: var(--dark);
     padding-top: 4em;
     display: flex;
     flex-direction: column;
@@ -656,7 +632,7 @@ nav{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 7.5em;
     text-align: center;
-    color: white;
+    color:var(--light);
     padding-bottom: 1em;
 }
 
@@ -675,14 +651,13 @@ nav{
 }
 .container8
 {
+    display: flex;
+    flex-direction: column;
     max-width: 650px;
 }
 .header8
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+    color: var(--light);
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     margin: 0 auto;
@@ -733,15 +708,11 @@ nav{
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 9em;
-    color: white;
+    color: var(--light);
 }
 
 .flexbox5
 {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 }
 
@@ -762,14 +733,15 @@ nav{
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     max-width: 900px;
-    color: white;
+    color: var(--light);
+    padding-left: 1em;
 }
 
 .text5_2
 {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 4em;
-    color: #AD6FE1;
+    color: var(--primary);
 }
 
 
@@ -781,7 +753,7 @@ nav{
 .window5
 {
     display: flex;
-    max-width: 1300px;
+    max-width: 1400px;
     align-items: center;
     justify-content: center;
     margin:0 auto;
@@ -799,8 +771,8 @@ nav{
 
 .blk
 {
-    background-color: #1B1B1B;
-    color: white;
+    background-color: var(--dark);
+    color: var(--light);
 }
 .header7
 {
@@ -872,14 +844,14 @@ nav{
     {
         font-size: 1em;
     }
-
+    
     .mobile-nav a
     {
         font-size: 4em;
         padding: 0em;
         width: 70%;
-        background-color: #AD6FE1;
-        color: white;
+        background-color: var(--primary);
+        color: var(--light);
     }
 
     /*HOME*/
@@ -1086,7 +1058,7 @@ nav{
     .text5_2
     {
         font-size: 6em;
-        color: #AD6FE1;
+        color: var(--primary);
         padding-bottom: .5em;
     }
  
@@ -1160,14 +1132,14 @@ nav{
   /*BUTTONS*/
 .button
 {
-    background-color:#AD6FE1 ;
+    background-color:var(--primary) ;
     width: 400px;
     padding: 20px;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Unbounded', cursive;
-    color: white;
+    color: var(--light);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     -webkit-transition-duration: 0.3s;
@@ -1186,15 +1158,15 @@ nav{
 
 .animation
 {
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     margin: 0;
 }
 
 /*ANIMATION*/
 .animation {
     text-align:center;
-    background-color:#1B1B1B;
-    color:#AD6FE1;
+    background-color:var(--dark);
+    color:var(--primary);
     font-family: 'Unbounded', cursive;
     font-weight:300;
     font-size:1.9em;
